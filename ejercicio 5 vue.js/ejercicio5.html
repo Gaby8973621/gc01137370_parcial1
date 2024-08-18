@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Tareas</h1>
+        <input v-model="newTask" placeholder="Agregar nueva tarea" @keyup.enter="addTask" />
+        <button @click="addTask">Agregar Tarea</button>
+        
+        <div class="task-list">
+            <div v-for="(task, index) in tasks" :key="index" class="task-item">
+                {{ task }}
+                <button @click="removeTask(index)">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

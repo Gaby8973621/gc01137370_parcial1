@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar y Ocultar Mensaje</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Botón para mostrar u ocultar el mensaje -->
+        <button @click="toggleMessage">{{ messageVisible ? 'Ocultar' : 'Mostrar' }} Mensaje</button>
+
+        <!-- Mensaje que se muestra u oculta -->
+        <p v-if="messageVisible">Este es el mensaje que se puede ocultar o mostrar.</p>
+    </div>
+
+    <!-- Incluye Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Incluye tu archivo de JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Conditional Rendering</title>
+  <!-- Incluye Vue.js desde un CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Aquí se renderiza el componente -->
+    <conditional-message :is-true="condition"></conditional-message>
+    
+    <!-- Botón para cambiar la condición -->
+    <button @click="toggleCondition">Cambiar Condición</button>
+  </div>
+
+  <!-- Incluye el archivo de JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
